@@ -1,0 +1,720 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8e7;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #00c6ff, #f9d423);
+    color: white;
+}
+
+header h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+/* Hero section */
+.hero {
+    max-width: 1100px;
+    margin: 40px auto;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.hero img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px;
+    color: white;
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.75)
+    );
+    text-decoration: none;
+}
+
+.hero-text h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+/* Button */
+button {
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    background: #ff6b35;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e85a2a;
+    transform: scale(1.05);
+}
+
+/* Activities */
+.activities {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.activities > h2 {
+    color: #0099cc;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card span {
+    font-size: 45px;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    color: #ff6b35;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #00a8cc;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Mobile design */
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .hero {
+        margin: 20px;
+    }
+
+    .hero img {
+        height: 450px;
+    }
+
+    .hero-text {
+        padding: 25px;
+    }
+
+    .hero-text h2 {
+        font-size: 28px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main page */
+body {
+    font-family: Arial, sans-serif;
+    background: #fff9e8;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background: #00a8cc;
+    color: white;
+}
+
+nav h2 {
+    font-size: 25px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ffe66d;
+}
+
+/* Hero section */
+.welcome {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(0, 150, 200, 0.55),
+            rgba(255, 170, 50, 0.55)
+        ),
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    max-width: 600px;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: auto;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+
+    margin-top: 30px;
+    padding: 14px 30px;
+
+    background: #ff7043;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #ff5722;
+    transform: translateY(-3px);
+}
+
+/* Gallery */
+.gallery {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.gallery > h2 {
+    color: #0099cc;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.photos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.photo {
+    background: white;
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+.photo:hover {
+    transform: translateY(-10px);
+}
+
+.photo img {
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+}
+
+.photo h3 {
+    color: #ff7043;
+    margin: 20px 10px 10px;
+}
+
+.photo p {
+    padding: 0 20px 25px;
+    line-height: 1.5;
+}
+
+/* Tips */
+.tips {
+    padding: 70px 8%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0a6,
+            #ffe0b2
+        );
+
+    text-align: center;
+}
+
+.tips > h2 {
+    font-size: 35px;
+    color: #008cba;
+    margin-bottom: 40px;
+}
+
+.tip-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tip {
+    flex: 1;
+
+    max-width: 350px;
+
+    background: rgba(255, 255, 255, 0.8);
+
+    padding: 35px 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 5px 15px
+        rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.tip h3 {
+    color: #ff7043;
+    margin-bottom: 12px;
+}
+
+.tip p {
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    padding: 35px;
+
+    text-align: center;
+
+    background: #008cba;
+    color: white;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+/* Responsive design */
+ @media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .welcome h1 {
+        font-size: 40px;
+    }
+
+    .photos {
+        grid-template-columns: 1fr;
+    }
+
+    .tip-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tip {
+        width: 100%;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f5f9;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.booking-card {
+    width: 900px;
+    max-width: 100%;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+
+.header {
+    background: #176b87;
+    color: white;
+    padding: 30px;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #dceff5;
+}
+
+/* Hotel Information */
+
+.hotel-info {
+    display: flex;
+    gap: 25px;
+    padding: 30px;
+}
+
+.hotel-image {
+    width: 280px;
+    height: 190px;
+    flex-shrink: 0;
+}
+
+.hotel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.hotel-details h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.location {
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.description {
+    line-height: 1.6;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Booking Details */
+
+.booking-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.detail {
+    padding: 25px;
+    border-right: 1px solid #eee;
+}
+
+.detail:last-child {
+    border-right: none;
+}
+
+.detail span {
+    display: block;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.detail strong {
+    display: block;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.detail small {
+    color: #999;
+}
+
+/* Guest Information */
+
+.guest-section {
+    padding: 30px;
+}
+
+.guest-section h2 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.guest-info {
+    background: #f7f9fb;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.guest-info p {
+    margin-bottom: 10px;
+}
+
+.guest-info p:last-child {
+    margin-bottom: 0;
+}
+
+/* Price */
+
+.price-section {
+    padding: 25px 30px;
+    border-top: 1px solid #eee;
+}
+
+.price-section > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    color: #666;
+}
+
+.price-section strong {
+    color: #222;
+}
+
+.price-section .total {
+    margin-top: 10px;
+    padding-top: 15px;
+    border-top: 2px solid #eee;
+    font-size: 20px;
+    color: #176b87;
+}
+
+.price-section .total strong {
+    color: #176b87;
+}
+
+/* Confirmation */
+
+.confirmation {
+    margin: 0 30px 25px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #eaf8f0;
+    border: 1px solid #b9e8ca;
+    border-radius: 10px;
+}
+
+.check-icon {
+    width: 45px;
+    height: 45px;
+    background: #28a745;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.confirmation h2 {
+    color: #218838;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.confirmation p {
+    color: #555;
+}
+
+/* Button */
+
+.button {
+    width: calc(100% - 60px);
+    margin: 0 30px 30px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #176b87;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #12546a;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .hotel-info {
+        flex-direction: column;
+    }
+
+    .hotel-image {
+        width: 100%;
+        height: 220px;
+    }
+
+    .booking-details {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .detail {
+        border-bottom: 1px solid #eee;
+    }
+
+    .detail:nth-child(2) {
+        border-right: none;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    .header {
+        padding: 25px 20px;
+    }
+
+    .hotel-info,
+    .guest-section {
+        padding: 20px;
+    }
+
+    .booking-details {
+        grid-template-columns: 1fr;
+    }
+
+    .detail {
+        border-right: none;
+    }
+
+    .confirmation {
+        margin: 0 20px 20px;
+    }
+
+    .button {
+        width: calc(100% - 40px);
+        margin: 0 20px 20px;
+    }
+}
+a{
+    text-decoration: none;
+}
